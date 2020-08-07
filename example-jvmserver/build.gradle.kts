@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") apply true
+    application
 }
 
 val ktor_version = "1.3.0"
@@ -23,4 +24,8 @@ dependencies {
     implementation("io.ktor:ktor-client-auth:$ktor_version")
     implementation("io.ktor:ktor-client-auth-jvm:$ktor_version")
 
+}
+
+application {
+    mainClassName = "uk.co.davehadley.examplekotlinserverclient.jvmserver.ExampleJvmServer"
 }

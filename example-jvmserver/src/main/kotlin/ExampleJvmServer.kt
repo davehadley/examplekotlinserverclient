@@ -1,3 +1,4 @@
+@file:JvmName("ExampleJvmServer")
 package uk.co.davehadley.examplekotlinserverclient.jvmserver
 
 import io.ktor.application.call
